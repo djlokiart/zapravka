@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22378477191FC7B700D0A27B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22378476191FC7B700D0A27B /* MapKit.framework */; };
 		22701CFB191BC5B80095D8DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22701CFA191BC5B80095D8DD /* UIKit.framework */; };
 		22701CFD191BC5B80095D8DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22701CFC191BC5B80095D8DD /* Foundation.framework */; };
 		22701CFF191BC5B80095D8DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22701CFE191BC5B80095D8DD /* CoreGraphics.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22378476191FC7B700D0A27B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		22701CF7191BC5B80095D8DD /* zapravka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zapravka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22701CFA191BC5B80095D8DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22701CFC191BC5B80095D8DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22378477191FC7B700D0A27B /* MapKit.framework in Frameworks */,
 				22701CFB191BC5B80095D8DD /* UIKit.framework in Frameworks */,
 				22701CFD191BC5B80095D8DD /* Foundation.framework in Frameworks */,
 				22701CFF191BC5B80095D8DD /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +92,7 @@
 		22701CEE191BC5B80095D8DD = {
 			isa = PBXGroup;
 			children = (
+				22378476191FC7B700D0A27B /* MapKit.framework */,
 				22701D00191BC5B80095D8DD /* zapravka */,
 				22701D27191BC5B80095D8DD /* zapravkaTests */,
 				22701CF9191BC5B80095D8DD /* Frameworks */,
@@ -467,6 +471,7 @@
 				22701D34191BC5B80095D8DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22701D35191BC5B80095D8DD /* Build configuration list for PBXNativeTarget "zapravkaTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +480,7 @@
 				22701D37191BC5B80095D8DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
