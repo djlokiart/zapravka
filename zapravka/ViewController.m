@@ -8,15 +8,32 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+//@interface ViewController ()
 
-@end
+//@end
 
 @implementation ViewController
+
+@synthesize map;
+
+- (void)dealloc
+{
+    self.map=nil;
+    [super dealloc];
+
+}
+
+-(void)viewDidUnload
+{
+    [super viewDidUnload];
+    self.map=nil;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    map.showsUserLocation=YES;
+    [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
