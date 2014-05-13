@@ -16,12 +16,13 @@
 
 @synthesize map;
 
-- (void)dealloc
+/*- (void)dealloc
 {
+    //[super dealloc];
     self.map=nil;
-    [super dealloc];
+    
 
-}
+}*/
 
 -(void)viewDidUnload
 {
