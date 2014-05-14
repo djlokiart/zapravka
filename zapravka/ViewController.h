@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+
+
 @interface ViewController : UIViewController
+{
+
+IBOutlet UISegmentedControl* segmentController;
+
+}
+
+-(IBAction) segmentControl:(id) sender;
+
 @property (nonatomic, retain) IBOutlet MKMapView *map;
+
+
 @end

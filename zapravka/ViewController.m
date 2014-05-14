@@ -16,6 +16,9 @@
 
 @synthesize map;
 
+-(IBAction) segmentControl:(id) sender
+{
+}
 /*- (void)dealloc
 {
     //[super dealloc];
