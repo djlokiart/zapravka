@@ -14,15 +14,28 @@
 
 @implementation ViewController
 
-@synthesize map;
-
--(IBAction) segmentControl:(id) sender
-{
+@synthesize mapV;
+@synthesize listV;
+@synthesize segmentControl;
+-(IBAction) valueChange:(UISegmentedControl *)sender{
+    switch (sender.selectedSegmentIndex) {
+        case 0:
+            self.mapV.hidden=NO;
+            self.listV.hidden=YES;
+            break;
+        case 1:
+            self.mapV.hidden=YES;
+            self.listV.hidden=NO;
+            break;
+        default:
+            break;
+    }
 }
+
 /*- (void)dealloc
 {
     //[super dealloc];
-    self.map=nil;
+    self.mapV=nil;
     
 
 }*/
@@ -30,14 +43,14 @@
 -(void)viewDidUnload
 {
     [super viewDidUnload];
-    self.map=nil;
+    self.mapV=nil;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    map.showsUserLocation=YES;
-    [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+    mapV.showsUserLocation=YES;
+    [mapV setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -46,5 +59,4 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 @end

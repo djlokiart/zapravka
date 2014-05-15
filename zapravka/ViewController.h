@@ -11,15 +11,8 @@
 
 
 @interface ViewController : UIViewController
-{
-
-IBOutlet UISegmentedControl* segmentController;
-
-}
-
--(IBAction) segmentControl:(id) sender;
-
-@property (nonatomic, retain) IBOutlet MKMapView *map;
-
-
+@property (strong, nonatomic) IBOutlet UITableView *listV;
+@property (strong, nonatomic) IBOutlet MKMapView *mapV;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *segmentControl;
+- (IBAction)valueChange:(UISegmentedControl*)sender;
 @end
