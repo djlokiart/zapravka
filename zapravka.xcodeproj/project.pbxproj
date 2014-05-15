@@ -399,6 +399,7 @@
 		22701D33191BC5B80095D8DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zapravka/zapravka-Prefix.pch";
 				INFOPLIST_FILE = "zapravka/zapravka-Info.plist";
@@ -410,6 +411,7 @@
 		22701D34191BC5B80095D8DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zapravka/zapravka-Prefix.pch";
 				INFOPLIST_FILE = "zapravka/zapravka-Info.plist";
