@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Company</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Газпром-нефть</string>
+			<key>Logo</key>
+			<string>logo/gazprom-neft</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Taxioil</string>
+			<key>Logo</key>
+			<string>logo/taxioil</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Лукойл</string>
+			<key>Logo</key>
+			<string>logo/lykoil</string>
+		</dict>
+	</array>
+	<key>Gas Stations</key>
+	<array>
+		<dict>
+			<key>Comp_id</key>
+			<integer>0</integer>
+			<key>Price</key>
+			<string>0,0,0,0,0</string>
+			<key>Rating</key>
+			<real>4.5</real>
+			<key>Fueltype</key>
+			<string>АИ-92, АИ-95, ДТ, пропан</string>
+			<key>Worktime</key>
+			<string>24/7, 19:00-19:20 - тех. перерыв</string>
+			<key>Address</key>
+			<string>Ул. Ларина 32, М7, Нижний Новгород</string>
+			<key>Coordinate</key>
+			<string>56.236169, 44.021683</string>
+			<key>Pay</key>
+			<string>Наличные, Visa, MasterCard</string>
+			<key>Dateupdate</key>
+			<date>2014-05-16T09:43:55Z</date>
+			<key>Extra</key>
+			<string>Туалет</string>
+		</dict>
+		<dict>
+			<key>Comp_id</key>
+			<integer>1</integer>
+			<key>Price</key>
+			<string>30.25,33.15,32.85,0</string>
+			<key>Rating</key>
+			<integer>4</integer>
+			<key>Fueltype</key>
+			<string>АИ-92, АИ-95, ДТ, пропан</string>
+			<key>Worktime</key>
+			<string>24/7</string>
+			<key>Address</key>
+			<string>Ул. Коминтерна-Бурнаковская 32А, Нижний Новгород</string>
+			<key>Coordinate</key>
+			<string>56.341127,43.8789804</string>
+			<key>Pay</key>
+			<string>Наличные, Visa, MasterCard</string>
+			<key>Dateupdate</key>
+			<date>2014-05-19T09:43:55Z</date>
+			<key>Extra</key>
+			<string>Туалет</string>
+		</dict>
+		<dict>
+			<key>Comp_id</key>
+			<integer>2</integer>
+			<key>Price</key>
+			<string>30.70,34.35,32.85,0</string>
+			<key>Rating</key>
+			<real>4.7</real>
+			<key>Fueltype</key>
+			<string>АИ-92, АИ-95, ДТ, пропан</string>
+			<key>Worktime</key>
+			<string>24/7</string>
+			<key>Address</key>
+			<string>Ул. Салганская , д. 31, Нижний Новгород</string>
+			<key>Coordinate</key>
+			<string>56.302587, 44.013934</string>
+			<key>Pay</key>
+			<string>Наличные, Visa, MasterCard</string>
+			<key>Dateupdate</key>
+			<date>2014-05-19T09:43:55Z</date>
+			<key>Extra</key>
+			<string>Магазин, Терминал Оплаты</string>
+		</dict>
+	</array>
+</dict>
+</plist>
