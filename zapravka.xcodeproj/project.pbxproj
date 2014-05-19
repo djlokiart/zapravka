@@ -25,6 +25,9 @@
 		22701D24191BC5B80095D8DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22701CFC191BC5B80095D8DD /* Foundation.framework */; };
 		22701D2C191BC5B80095D8DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22701D2A191BC5B80095D8DD /* InfoPlist.strings */; };
 		22701D2F191BC5B80095D8DD /* zapravkaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22701D2E191BC5B80095D8DD /* zapravkaTests.m */; };
+		2293E5A6192613A40037C012 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2293E5A5192613A40037C012 /* data.plist */; };
+		2293E5A819261CDF0037C012 /* gazprom-neft.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2293E5A719261CDF0037C012 /* gazprom-neft.jpg */; };
+		2293E5AC1926227B0037C012 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2293E5AB1926227B0037C012 /* DataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,10 @@
 		22701D2B191BC5B80095D8DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22701D2D191BC5B80095D8DD /* zapravkaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zapravkaTests.h; sourceTree = "<group>"; };
 		22701D2E191BC5B80095D8DD /* zapravkaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zapravkaTests.m; sourceTree = "<group>"; };
+		2293E5A5192613A40037C012 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		2293E5A719261CDF0037C012 /* gazprom-neft.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "gazprom-neft.jpg"; path = "../../gazprom-neft.jpg"; sourceTree = "<group>"; };
+		2293E5AA1926227B0037C012 /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
+		2293E5AB1926227B0037C012 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +136,8 @@
 				22701D15191BC5B80095D8DD /* MainStoryboard_iPad.storyboard */,
 				22701D18191BC5B80095D8DD /* ViewController.h */,
 				22701D19191BC5B80095D8DD /* ViewController.m */,
+				2293E5AA1926227B0037C012 /* DataController.h */,
+				2293E5AB1926227B0037C012 /* DataController.m */,
 				22701D01191BC5B80095D8DD /* Supporting Files */,
 			);
 			path = zapravka;
@@ -137,7 +146,9 @@
 		22701D01191BC5B80095D8DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2293E5A919261CF20037C012 /* logo */,
 				22701D02191BC5B80095D8DD /* zapravka-Info.plist */,
+				2293E5A5192613A40037C012 /* data.plist */,
 				22701D03191BC5B80095D8DD /* InfoPlist.strings */,
 				22701D06191BC5B80095D8DD /* main.m */,
 				22701D08191BC5B80095D8DD /* zapravka-Prefix.pch */,
@@ -165,6 +176,14 @@
 				22701D2A191BC5B80095D8DD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2293E5A919261CF20037C012 /* logo */ = {
+			isa = PBXGroup;
+			children = (
+				2293E5A719261CDF0037C012 /* gazprom-neft.jpg */,
+			);
+			name = logo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +263,8 @@
 				22701D11191BC5B80095D8DD /* Default-568h@2x.png in Resources */,
 				22701D14191BC5B80095D8DD /* MainStoryboard_iPhone.storyboard in Resources */,
 				22701D17191BC5B80095D8DD /* MainStoryboard_iPad.storyboard in Resources */,
+				2293E5A6192613A40037C012 /* data.plist in Resources */,
+				2293E5A819261CDF0037C012 /* gazprom-neft.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +302,7 @@
 				22701D07191BC5B80095D8DD /* main.m in Sources */,
 				22701D0B191BC5B80095D8DD /* AppDelegate.m in Sources */,
 				22701D1A191BC5B80095D8DD /* ViewController.m in Sources */,
+				2293E5AC1926227B0037C012 /* DataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
