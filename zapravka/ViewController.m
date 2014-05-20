@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DataController.h"
+#import "DetailViewController.h"
 
 //@interface ViewController ()
 
@@ -84,5 +85,33 @@ DataController *myDataController;
     cell.textLabel.text = [[myDataController->company[a][@"Name"] stringByAppendingString: @" - " ]stringByAppendingString: myDataController->gasStations[indexPath.row][@"Address"]];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"detailSegue"]){
+        NSIndexPath *indexpath = nil;
+        indexpath = [listV indexPathForSelectedRow];
+        //date to string
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"dd.MM.YYYY"];
+        [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"..."]];
+        //Передача аргументов
+        int a = [myDataController->gasStations[indexpath.row][@"Comp_id"] intValue];
+        NSString *detName = myDataController->company[a][@"Name"];
+        NSString *detImage = myDataController->company[a][@"Logo"];
+        NSString *Dateupdate = [formatter stringFromDate:myDataController->gasStations[indexpath.row][@"Dateupdate"]];
+        UIImage * Image = [UIImage imageNamed: detImage];
+        NSLog(@" %@",detImage);
+        [[segue destinationViewController] setNameContent:detName];
+        [[segue destinationViewController] setImageContent:Image];
+        [[segue destinationViewController] setAddressContent:myDataController->gasStations[indexpath.row][@"Address"]];
+        [[segue destinationViewController] setRatingContent:myDataController->gasStations[indexpath.row][@"Rating"]];
+        [[segue destinationViewController] setPriceContent:myDataController->gasStations[indexpath.row][@"Price"]];
+        [[segue destinationViewController] setFueltypeContent:myDataController->gasStations[indexpath.row][@"Fueltype"]];
+        [[segue destinationViewController] setExtraContent:myDataController->gasStations[indexpath.row][@"Extra"]];
+        [[segue destinationViewController] setWorktimeContent:myDataController->gasStations[indexpath.row][@"Worktime"]];
+        [[segue destinationViewController] setDateupdateContent:Dateupdate];
+        
+    }
 }
 @end

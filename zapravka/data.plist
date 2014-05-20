@@ -8,19 +8,19 @@
 			<key>Name</key>
 			<string>Газпром-нефть</string>
 			<key>Logo</key>
-			<string>logo/gazprom-neft</string>
+			<string>gazprom-neft.jpg</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Taxioil</string>
 			<key>Logo</key>
-			<string>logo/taxioil</string>
+			<string>taxioil.jpg</string>
 		</dict>
 		<dict>
 			<key>Name</key>
 			<string>Лукойл</string>
 			<key>Logo</key>
-			<string>logo/lykoil</string>
+			<string>lykoil.jpg</string>
 		</dict>
 	</array>
 	<key>Gas Stations</key>
@@ -81,7 +81,7 @@
 			<key>Worktime</key>
 			<string>24/7</string>
 			<key>Address</key>
-			<string>Ул. Салганская , д. 31, Нижний Новгород</string>
+			<string>Ул. Салганская 31, Нижний Новгород</string>
 			<key>Coordinate</key>
 			<string>56.302587, 44.013934</string>
 			<key>Pay</key>
