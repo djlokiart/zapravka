@@ -10,10 +10,6 @@
 #import "DataController.h"
 #import "DetailViewController.h"
 
-//@interface ViewController ()
-
-//@end
-
 @implementation ViewController
 
 @synthesize mapV;
@@ -48,6 +44,7 @@ DataController *myDataController;
 {
     [super viewDidUnload];
     self.mapV=nil;
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)viewDidLoad
@@ -55,6 +52,11 @@ DataController *myDataController;
     [super viewDidLoad];
     mapV.showsUserLocation=YES;
     [mapV setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 
 - (void)didReceiveMemoryWarning

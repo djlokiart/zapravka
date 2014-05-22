@@ -39,6 +39,10 @@
     self.dWorktime.text = self.worktimeContent;
     self.dDateupdate.text = self.dateupdateContent;
 }
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
 
 - (void)didReceiveMemoryWarning
 {

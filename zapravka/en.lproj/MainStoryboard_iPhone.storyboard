@@ -12,6 +12,15 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kOq-YY-5j6">
+                                <segments>
+                                    <segment title="Map"/>
+                                    <segment title="List"/>
+                                </segments>
+                                <connections>
+                                    <action selector="valueChange:" destination="2" eventType="valueChanged" id="BDi-pp-7Nq"/>
+                                </connections>
+                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqI-2J-UXB">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -25,22 +34,16 @@
                                     <segue destination="nAE-VP-hNC" kind="push" id="jjG-FD-JQR"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kOq-YY-5j6">
-                                <segments>
-                                    <segment title="Map"/>
-                                    <segment title="List"/>
-                                </segments>
-                                <connections>
-                                    <action selector="valueChange:" destination="2" eventType="valueChanged" id="BDi-pp-7Nq"/>
-                                </connections>
-                            </segmentedControl>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ4-fI-s3z">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="433" id="oBD-d7-37A"/>
+                                    <constraint firstAttribute="height" constant="472" id="SCe-lR-Vng"/>
                                 </constraints>
                             </mapView>
                             <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8g3-Co-ccX">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="427" id="CtW-L2-yRw"/>
+                                </constraints>
                                 <label key="tableHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="List of all the gas stations" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="BvV-ZZ-RGn">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
@@ -77,21 +80,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="kOq-YY-5j6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="26" id="9Qj-2l-21R"/>
-                            <constraint firstItem="8g3-Co-ccX" firstAttribute="top" secondItem="ZZ4-fI-s3z" secondAttribute="top" type="default" id="9ex-jc-aCZ"/>
                             <constraint firstItem="kOq-YY-5j6" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="CbZ-WS-nOe"/>
                             <constraint firstItem="8g3-Co-ccX" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Dd6-BR-n1h"/>
+                            <constraint firstAttribute="bottom" secondItem="8g3-Co-ccX" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="GdV-Vd-NKM"/>
                             <constraint firstItem="ZZ4-fI-s3z" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="IDo-cZ-utz"/>
                             <constraint firstItem="8g3-Co-ccX" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="IfF-WD-aXj"/>
                             <constraint firstItem="ZZ4-fI-s3z" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="KDm-Dj-OYg"/>
+                            <constraint firstItem="hqI-2J-UXB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="3" id="LGX-We-eYb"/>
+                            <constraint firstAttribute="trailing" secondItem="hqI-2J-UXB" secondAttribute="trailing" constant="5" id="TZH-LD-H7Y"/>
                             <constraint firstItem="kOq-YY-5j6" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Ufl-ZY-VZJ"/>
-                            <constraint firstAttribute="trailing" secondItem="hqI-2J-UXB" secondAttribute="trailing" constant="7" id="eNx-lE-Vrq"/>
-                            <constraint firstItem="8g3-Co-ccX" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="fpb-Ld-7xZ"/>
-                            <constraint firstItem="hqI-2J-UXB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="6" id="jmf-GY-mqk"/>
-                            <constraint firstItem="ZZ4-fI-s3z" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="y82-Br-O62"/>
+                            <constraint firstItem="kOq-YY-5j6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="26" id="dqd-Rf-i6m"/>
+                            <constraint firstItem="ZZ4-fI-s3z" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="kCn-UA-a1B"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7Ax-3w-EAS"/>
+                    <navigationItem key="navigationItem" id="YKp-Ek-csl"/>
                     <connections>
                         <outlet property="listV" destination="8g3-Co-ccX" id="zPx-Ld-HEe"/>
                         <outlet property="mapV" destination="ZZ4-fI-s3z" id="HYF-H6-slm"/>
@@ -275,15 +277,16 @@
             </objects>
             <point key="canvasLocation" x="431" y="-299"/>
         </scene>
-        <!--View Controller - Info-->
+        <!--Info View Controller - Info-->
         <scene sceneID="8Fg-pm-dCX">
             <objects>
-                <viewController title="Info" id="nAE-VP-hNC" sceneMemberID="viewController">
+                <viewController title="Info" id="nAE-VP-hNC" customClass="InfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L3G-e0-hmR">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Info" id="5qM-BG-hsX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MyY-tB-08X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -323,6 +326,9 @@
                 <relationship kind="outlet" name="dWorktime" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
             </relationships>
+        </class>
+        <class className="InfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoViewController.h"/>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
