@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		220710AF192BCBA200B7358C /* taxioil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 220710AE192BCBA100B7358C /* taxioil.jpg */; };
-		220710B3192BCDED00B7358C /* lykoil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 220710B2192BCDED00B7358C /* lykoil.jpg */; };
+		22174AC7192CDB970007CD42 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22174AC6192CDB970007CD42 /* InfoViewController.m */; };
 		22378477191FC7B700D0A27B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22378476191FC7B700D0A27B /* MapKit.framework */; };
 		22701CFB191BC5B80095D8DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22701CFA191BC5B80095D8DD /* UIKit.framework */; };
 		22701CFD191BC5B80095D8DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22701CFC191BC5B80095D8DD /* Foundation.framework */; };
@@ -28,9 +27,11 @@
 		22701D2C191BC5B80095D8DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22701D2A191BC5B80095D8DD /* InfoPlist.strings */; };
 		22701D2F191BC5B80095D8DD /* zapravkaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22701D2E191BC5B80095D8DD /* zapravkaTests.m */; };
 		2293E5A6192613A40037C012 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2293E5A5192613A40037C012 /* data.plist */; };
-		2293E5A819261CDF0037C012 /* gazprom-neft.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2293E5A719261CDF0037C012 /* gazprom-neft.jpg */; };
 		2293E5AC1926227B0037C012 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2293E5AB1926227B0037C012 /* DataController.m */; };
 		2296027A192B17B70008D214 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22960279192B17B70008D214 /* DetailViewController.m */; };
+		229BF75E192DCCDA00045540 /* gazprom-neft.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 229BF75B192DCCDA00045540 /* gazprom-neft.jpg */; };
+		229BF75F192DCCDA00045540 /* lykoil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 229BF75C192DCCDA00045540 /* lykoil.jpg */; };
+		229BF760192DCCDA00045540 /* taxioil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 229BF75D192DCCDA00045540 /* taxioil.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		220710AE192BCBA100B7358C /* taxioil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = taxioil.jpg; path = ../../../Downloads/taxioil.jpg; sourceTree = "<group>"; };
-		220710B2192BCDED00B7358C /* lykoil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lykoil.jpg; path = ../../Downloads/lykoil.jpg; sourceTree = "<group>"; };
+		22174AC5192CDB970007CD42 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		22174AC6192CDB970007CD42 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		22378476191FC7B700D0A27B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		22701CF7191BC5B80095D8DD /* zapravka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zapravka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22701CFA191BC5B80095D8DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -71,11 +72,13 @@
 		22701D2D191BC5B80095D8DD /* zapravkaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zapravkaTests.h; sourceTree = "<group>"; };
 		22701D2E191BC5B80095D8DD /* zapravkaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zapravkaTests.m; sourceTree = "<group>"; };
 		2293E5A5192613A40037C012 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
-		2293E5A719261CDF0037C012 /* gazprom-neft.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "gazprom-neft.jpg"; path = "../../gazprom-neft.jpg"; sourceTree = "<group>"; };
 		2293E5AA1926227B0037C012 /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
 		2293E5AB1926227B0037C012 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
 		22960278192B17B70008D214 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		22960279192B17B70008D214 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		229BF75B192DCCDA00045540 /* gazprom-neft.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gazprom-neft.jpg"; sourceTree = "<group>"; };
+		229BF75C192DCCDA00045540 /* lykoil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lykoil.jpg; sourceTree = "<group>"; };
+		229BF75D192DCCDA00045540 /* taxioil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = taxioil.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +109,6 @@
 		22701CEE191BC5B80095D8DD = {
 			isa = PBXGroup;
 			children = (
-				220710B2192BCDED00B7358C /* lykoil.jpg */,
 				22378476191FC7B700D0A27B /* MapKit.framework */,
 				22701D00191BC5B80095D8DD /* zapravka */,
 				22701D27191BC5B80095D8DD /* zapravkaTests */,
@@ -141,6 +143,8 @@
 				22701D09191BC5B80095D8DD /* AppDelegate.h */,
 				22701D0A191BC5B80095D8DD /* AppDelegate.m */,
 				22701D12191BC5B80095D8DD /* MainStoryboard_iPhone.storyboard */,
+				22174AC5192CDB970007CD42 /* InfoViewController.h */,
+				22174AC6192CDB970007CD42 /* InfoViewController.m */,
 				22701D15191BC5B80095D8DD /* MainStoryboard_iPad.storyboard */,
 				22701D18191BC5B80095D8DD /* ViewController.h */,
 				22701D19191BC5B80095D8DD /* ViewController.m */,
@@ -191,8 +195,9 @@
 		2293E5A919261CF20037C012 /* logo */ = {
 			isa = PBXGroup;
 			children = (
-				220710AE192BCBA100B7358C /* taxioil.jpg */,
-				2293E5A719261CDF0037C012 /* gazprom-neft.jpg */,
+				229BF75B192DCCDA00045540 /* gazprom-neft.jpg */,
+				229BF75C192DCCDA00045540 /* lykoil.jpg */,
+				229BF75D192DCCDA00045540 /* taxioil.jpg */,
 			);
 			name = logo;
 			sourceTree = "<group>";
@@ -275,9 +280,9 @@
 				22701D14191BC5B80095D8DD /* MainStoryboard_iPhone.storyboard in Resources */,
 				22701D17191BC5B80095D8DD /* MainStoryboard_iPad.storyboard in Resources */,
 				2293E5A6192613A40037C012 /* data.plist in Resources */,
-				2293E5A819261CDF0037C012 /* gazprom-neft.jpg in Resources */,
-				220710AF192BCBA200B7358C /* taxioil.jpg in Resources */,
-				220710B3192BCDED00B7358C /* lykoil.jpg in Resources */,
+				229BF75E192DCCDA00045540 /* gazprom-neft.jpg in Resources */,
+				229BF75F192DCCDA00045540 /* lykoil.jpg in Resources */,
+				229BF760192DCCDA00045540 /* taxioil.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +322,7 @@
 				22701D1A191BC5B80095D8DD /* ViewController.m in Sources */,
 				2293E5AC1926227B0037C012 /* DataController.m in Sources */,
 				2296027A192B17B70008D214 /* DetailViewController.m in Sources */,
+				22174AC7192CDB970007CD42 /* InfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
