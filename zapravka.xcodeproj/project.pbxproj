@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		22174AC7192CDB970007CD42 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22174AC6192CDB970007CD42 /* InfoViewController.m */; };
 		22378477191FC7B700D0A27B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22378476191FC7B700D0A27B /* MapKit.framework */; };
+		223F0749192E3C1D00946FEA /* TileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F0746192E3C1D00946FEA /* TileOverlay.m */; };
+		223F074A192E3C1D00946FEA /* TileOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F0748192E3C1D00946FEA /* TileOverlayView.m */; };
 		22701CFB191BC5B80095D8DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22701CFA191BC5B80095D8DD /* UIKit.framework */; };
 		22701CFD191BC5B80095D8DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22701CFC191BC5B80095D8DD /* Foundation.framework */; };
 		22701CFF191BC5B80095D8DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22701CFE191BC5B80095D8DD /* CoreGraphics.framework */; };
@@ -26,8 +28,6 @@
 		22701D24191BC5B80095D8DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22701CFC191BC5B80095D8DD /* Foundation.framework */; };
 		22701D2C191BC5B80095D8DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22701D2A191BC5B80095D8DD /* InfoPlist.strings */; };
 		22701D2F191BC5B80095D8DD /* zapravkaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22701D2E191BC5B80095D8DD /* zapravkaTests.m */; };
-		2272D01D192E35A00044BD78 /* TileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 2272D00A192E35A00044BD78 /* TileOverlay.m */; };
-		2272D01E192E35A00044BD78 /* TileOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2272D00C192E35A00044BD78 /* TileOverlayView.m */; };
 		2293E5A6192613A40037C012 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2293E5A5192613A40037C012 /* data.plist */; };
 		2293E5AC1926227B0037C012 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2293E5AB1926227B0037C012 /* DataController.m */; };
 		2296027A192B17B70008D214 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22960279192B17B70008D214 /* DetailViewController.m */; };
@@ -50,6 +50,10 @@
 		22174AC5192CDB970007CD42 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		22174AC6192CDB970007CD42 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		22378476191FC7B700D0A27B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		223F0745192E3C1D00946FEA /* TileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileOverlay.h; path = zapravka/TileOverlay.h; sourceTree = SOURCE_ROOT; };
+		223F0746192E3C1D00946FEA /* TileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TileOverlay.m; path = zapravka/TileOverlay.m; sourceTree = SOURCE_ROOT; };
+		223F0747192E3C1D00946FEA /* TileOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileOverlayView.h; path = zapravka/TileOverlayView.h; sourceTree = SOURCE_ROOT; };
+		223F0748192E3C1D00946FEA /* TileOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TileOverlayView.m; path = zapravka/TileOverlayView.m; sourceTree = SOURCE_ROOT; };
 		22701CF7191BC5B80095D8DD /* zapravka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zapravka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22701CFA191BC5B80095D8DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22701CFC191BC5B80095D8DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,10 +77,6 @@
 		22701D2B191BC5B80095D8DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22701D2D191BC5B80095D8DD /* zapravkaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zapravkaTests.h; sourceTree = "<group>"; };
 		22701D2E191BC5B80095D8DD /* zapravkaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zapravkaTests.m; sourceTree = "<group>"; };
-		2272D009192E35A00044BD78 /* TileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlay.h; sourceTree = "<group>"; };
-		2272D00A192E35A00044BD78 /* TileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileOverlay.m; sourceTree = "<group>"; };
-		2272D00B192E35A00044BD78 /* TileOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlayView.h; sourceTree = "<group>"; };
-		2272D00C192E35A00044BD78 /* TileOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileOverlayView.m; sourceTree = "<group>"; };
 		2293E5A5192613A40037C012 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		2293E5AA1926227B0037C012 /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
 		2293E5AB1926227B0037C012 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
@@ -202,10 +202,10 @@
 		2272CFF5192E35A00044BD78 /* GoogleMapsiOS6Demo */ = {
 			isa = PBXGroup;
 			children = (
-				2272D009192E35A00044BD78 /* TileOverlay.h */,
-				2272D00A192E35A00044BD78 /* TileOverlay.m */,
-				2272D00B192E35A00044BD78 /* TileOverlayView.h */,
-				2272D00C192E35A00044BD78 /* TileOverlayView.m */,
+				223F0745192E3C1D00946FEA /* TileOverlay.h */,
+				223F0746192E3C1D00946FEA /* TileOverlay.m */,
+				223F0747192E3C1D00946FEA /* TileOverlayView.h */,
+				223F0748192E3C1D00946FEA /* TileOverlayView.m */,
 			);
 			name = GoogleMapsiOS6Demo;
 			path = ../../GoogleMapsOverlayiOS/GoogleMapsiOS6Demo;
@@ -342,8 +342,8 @@
 				2293E5AC1926227B0037C012 /* DataController.m in Sources */,
 				2296027A192B17B70008D214 /* DetailViewController.m in Sources */,
 				22174AC7192CDB970007CD42 /* InfoViewController.m in Sources */,
-				2272D01D192E35A00044BD78 /* TileOverlay.m in Sources */,
-				2272D01E192E35A00044BD78 /* TileOverlayView.m in Sources */,
+				223F0749192E3C1D00946FEA /* TileOverlay.m in Sources */,
+				223F074A192E3C1D00946FEA /* TileOverlayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
