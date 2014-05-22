@@ -15,6 +15,7 @@
 @synthesize mapV;
 @synthesize listV;
 @synthesize segmentControl;
+@synthesize overlay;
 DataController *myDataController;
 
 -(IBAction) valueChange:(UISegmentedControl *)sender{
@@ -52,6 +53,27 @@ DataController *myDataController;
     [super viewDidLoad];
     mapV.showsUserLocation=YES;
     [mapV setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+    
+    //OSM
+    overlay = [[TileOverlay alloc] initOverlay];
+    [mapV addOverlay:overlay];
+    MKMapRect visibleRect = [mapV mapRectThatFits:overlay.boundingMapRect];
+    visibleRect.size.width /= 2;
+    visibleRect.size.height /= 2;
+    visibleRect.origin.x += visibleRect.size.width / 2;
+    visibleRect.origin.y += visibleRect.size.height / 2;
+    mapV.visibleMapRect = visibleRect;
+    // END OSM
+    
+    // Remove Legal link
+    for (UIView *v in [self.mapV subviews]) {
+		NSLog(@"%@", NSStringFromClass([v class]));
+		if ([NSStringFromClass([v class]) isEqualToString:@"MKAttributionLabel"]) {
+			v.hidden = YES;
+		}
+	}
+    // end remove
+
     
 }
 
@@ -115,5 +137,12 @@ DataController *myDataController;
         [[segue destinationViewController] setDateupdateContent:Dateupdate];
         
     }
+}
+
+//GoogleMaps
+- (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)ovl
+{
+    TileOverlayView *view = [[TileOverlayView alloc] initWithOverlay:ovl];
+    return view;
 }
 @end
