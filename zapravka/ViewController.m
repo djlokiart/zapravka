@@ -73,7 +73,12 @@ DataController *myDataController;
 		}
 	}
     // end remove
-
+    
+    CGRect frame = CGRectMake(500,500,5000,200);
+    segmentControl.frame = frame;
+    segmentControl.segmentedControlStyle = UISegmentedControlStyleBar;
+    segmentControl.backgroundColor=[UIColor blackColor];
+    [segmentControl setTintColor:[UIColor orangeColor]];
     
 }
 

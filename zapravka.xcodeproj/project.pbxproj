@@ -34,6 +34,7 @@
 		229BF75E192DCCDA00045540 /* gazprom-neft.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 229BF75B192DCCDA00045540 /* gazprom-neft.jpg */; };
 		229BF75F192DCCDA00045540 /* lykoil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 229BF75C192DCCDA00045540 /* lykoil.jpg */; };
 		229BF760192DCCDA00045540 /* taxioil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 229BF75D192DCCDA00045540 /* taxioil.jpg */; };
+		B3B08B81192E6AAC00AEA5A0 /* zapravkalogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B08B80192E6AAC00AEA5A0 /* zapravkalogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		229BF75B192DCCDA00045540 /* gazprom-neft.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gazprom-neft.jpg"; sourceTree = "<group>"; };
 		229BF75C192DCCDA00045540 /* lykoil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lykoil.jpg; sourceTree = "<group>"; };
 		229BF75D192DCCDA00045540 /* taxioil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = taxioil.jpg; sourceTree = "<group>"; };
+		B3B08B80192E6AAC00AEA5A0 /* zapravkalogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zapravkalogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		22701CEE191BC5B80095D8DD = {
 			isa = PBXGroup;
 			children = (
+				B3B08B80192E6AAC00AEA5A0 /* zapravkalogo.png */,
 				22378476191FC7B700D0A27B /* MapKit.framework */,
 				22701D00191BC5B80095D8DD /* zapravka */,
 				22701D27191BC5B80095D8DD /* zapravkaTests */,
@@ -301,6 +304,7 @@
 				229BF75E192DCCDA00045540 /* gazprom-neft.jpg in Resources */,
 				229BF75F192DCCDA00045540 /* lykoil.jpg in Resources */,
 				229BF760192DCCDA00045540 /* taxioil.jpg in Resources */,
+				B3B08B81192E6AAC00AEA5A0 /* zapravkalogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
