@@ -14,6 +14,7 @@
     NSArray *gasStations;
     NSArray *company;
     int count;
+    int countCompany;
 }
 - (id)init;
 @end

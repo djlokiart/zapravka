@@ -38,8 +38,10 @@
 			<string>24/7, 19:00-19:20 - тех. перерыв</string>
 			<key>Address</key>
 			<string>Ул. Ларина 32, М7, Нижний Новгород</string>
-			<key>Coordinate</key>
-			<string>56.236169, 44.021683</string>
+			<key>Coordinate-d</key>
+			<real>56.236169</real>
+			<key>Coordinate-s</key>
+			<real>44.021683</real>
 			<key>Pay</key>
 			<string>Наличные, Visa, MasterCard</string>
 			<key>Dateupdate</key>
@@ -60,8 +62,10 @@
 			<string>24/7</string>
 			<key>Address</key>
 			<string>Ул. Коминтерна-Бурнаковская 32А, Нижний Новгород</string>
-			<key>Coordinate</key>
-			<string>56.341127,43.8789804</string>
+			<key>Coordinate-d</key>
+			<string>56.341127</string>
+			<key>Coordinate-s</key>
+			<real>43.8789804</real>
 			<key>Pay</key>
 			<string>Наличные, Visa, MasterCard</string>
 			<key>Dateupdate</key>
@@ -82,8 +86,10 @@
 			<string>24/7</string>
 			<key>Address</key>
 			<string>Ул. Салганская 31, Нижний Новгород</string>
-			<key>Coordinate</key>
-			<string>56.302587, 44.013934</string>
+			<key>Coordinate-d</key>
+			<string>56.302284</string>
+			<key>Coordinate-s</key>
+			<real>44.013588</real>
 			<key>Pay</key>
 			<string>Наличные, Visa, MasterCard</string>
 			<key>Dateupdate</key>

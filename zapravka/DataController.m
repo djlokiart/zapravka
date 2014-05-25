@@ -27,9 +27,12 @@
         }];
         
         company = [NSArray arrayWithArray:[dictRoot objectForKey:@"Company"]];
-        // Now a loop through Array to fetch single Item from catList which is Dictionary
+        countCompany = 0;
+        [company enumerateObjectsUsingBlock:^(id obj, NSUInteger index, BOOL *stop) {
+            ++countCompany;
+        }];
 
-        NSLog(@"Count: %d", self->count);
+        NSLog(@"CountCompany: %d", self->countCompany);
 
     }
     return self;

@@ -20,6 +20,5 @@
 
 //maps
 @property (strong, nonatomic) TileOverlay *overlay;
-
 - (IBAction)valueChange:(UISegmentedControl*)sender;
 @end

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "DataController.h"
 #import "DetailViewController.h"
+#import "MapPoint.h"
 
 @implementation ViewController
 
@@ -17,6 +18,17 @@
 @synthesize segmentControl;
 @synthesize overlay;
 DataController *myDataController;
+
+- (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
+    //UIGraphicsBeginImageContext(newSize);
+    // In next line, pass 0.0 to use the current device's pixel scaling factor (and thus account for Retina resolution).
+    // Pass 1.0 to force exact pixel size.
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
 
 -(IBAction) valueChange:(UISegmentedControl *)sender{
     switch (sender.selectedSegmentIndex) {
@@ -63,6 +75,7 @@ DataController *myDataController;
     visibleRect.origin.x += visibleRect.size.width / 2;
     visibleRect.origin.y += visibleRect.size.height / 2;
     mapV.visibleMapRect = visibleRect;
+    NSLog(@"RECT %e",visibleRect.size.width);
     // END OSM
     
     // Remove Legal link
@@ -73,12 +86,32 @@ DataController *myDataController;
 		}
 	}
     // end remove
-
     
+    [self mapViewPointer:mapV];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [super viewWillAppear:animated];
+        
+    // Координаты точки на карте
+    CLLocationCoordinate2D location;
+    location.latitude  = 56.3286700;
+    location.longitude = 44.0020500;
+        
+    // Масштаб
+    MKCoordinateSpan span;
+    span.latitudeDelta  = 0.05;
+    span.longitudeDelta = 0.05;
+        
+    // Регион
+    MKCoordinateRegion region;
+    region.center = location;
+    region.span = span;
+        
+    // Устанавливаем регион
+    [mapV setRegion:region animated:animated];
+    [mapV selectAnnotation:[mapV.annotations objectAtIndex:0]  animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -145,4 +178,60 @@ DataController *myDataController;
     TileOverlayView *view = [[TileOverlayView alloc] initWithOverlay:ovl];
     return view;
 }
+
+- (void)mapViewPointer:(MKMapView *)mapView
+{
+    myDataController = [[DataController alloc] init];
+    for(int i = 0; i<myDataController->count ;i++)
+    {
+        int a = [myDataController->gasStations[i][@"Comp_id"] intValue];
+        CLLocationCoordinate2D newCoord = { [myDataController->gasStations[i][@"Coordinate-d"] doubleValue], [myDataController->gasStations[i][@"Coordinate-s"] doubleValue] };
+        MapPoint *mapPoint = [[MapPoint alloc] initWithCoordinate:newCoord title:myDataController->company[a][@"Name"] subTitle:@"Zapravka"];
+        [mapView addAnnotation:mapPoint];
+        
+    }
+}
+//Изменяем аннотацию
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation;
+{
+    if(annotation == mapView.userLocation){
+        return nil;
+    }
+    int i;
+    for(i=0; i<myDataController->countCompany-1; i++){
+        if([myDataController->company[i][@"Name"] isEqual: [annotation title]]){
+            NSLog(@"%@",[annotation title]);
+            break;
+        }
+    }
+    NSString *annotationIdentifier = [annotation title];
+    MKPinAnnotationView *mapAnnotation= (MKPinAnnotationView *) [mapView
+                                                            dequeueReusableAnnotationViewWithIdentifier:annotationIdentifier];
+    mapAnnotation = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationIdentifier];
+    UIImageView *annotationIcon;
+    UIImage *marker = [UIImage imageNamed:myDataController->company[i][@"Logo"]];
+    if (myDataController->company[i][@"Logo"] != nil)
+    {
+        annotationIcon = [[UIImageView alloc] initWithImage:marker];
+    }
+    else
+    {
+        annotationIcon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"zapravka.png"]];
+    }
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    [rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
+    mapAnnotation.rightCalloutAccessoryView = rightButton;
+    [annotationIcon setFrame:CGRectMake(0, 0, 30, 30)];
+    marker = [self imageWithImage:marker scaledToSize:CGSizeMake(30, 30)];
+    mapAnnotation.leftCalloutAccessoryView = annotationIcon;
+    mapAnnotation.CanShowCallout = YES;
+    mapAnnotation.Opaque = true;
+    mapAnnotation.image = marker;
+    return mapAnnotation;
+}
+
+-(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
+    [self performSegueWithIdentifier:@"detailSegue" sender:view];
+}
+
 @end
