@@ -75,12 +75,10 @@ DataController *myDataController;
     visibleRect.origin.x += visibleRect.size.width / 2;
     visibleRect.origin.y += visibleRect.size.height / 2;
     mapV.visibleMapRect = visibleRect;
-    NSLog(@"RECT %e",visibleRect.size.width);
     // END OSM
     
     // Remove Legal link
     for (UIView *v in [self.mapV subviews]) {
-		NSLog(@"%@", NSStringFromClass([v class]));
 		if ([NSStringFromClass([v class]) isEqualToString:@"MKAttributionLabel"]) {
 			v.hidden = YES;
 		}
@@ -133,7 +131,6 @@ DataController *myDataController;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    myDataController = [[DataController alloc] init];
     return myDataController->count;
 }
 
@@ -164,7 +161,6 @@ DataController *myDataController;
         NSString *detImage = myDataController->company[a][@"Logo"];
         NSString *Dateupdate = [formatter stringFromDate:myDataController->gasStations[indexpath.row][@"Dateupdate"]];
         UIImage * Image = [UIImage imageNamed: detImage];
-        NSLog(@" %@",detImage);
         [[segue destinationViewController] setNameContent:detName];
         [[segue destinationViewController] setImageContent:Image];
         [[segue destinationViewController] setAddressContent:myDataController->gasStations[indexpath.row][@"Address"]];
@@ -173,6 +169,30 @@ DataController *myDataController;
         [[segue destinationViewController] setFueltypeContent:myDataController->gasStations[indexpath.row][@"Fueltype"]];
         [[segue destinationViewController] setExtraContent:myDataController->gasStations[indexpath.row][@"Extra"]];
         [[segue destinationViewController] setWorktimeContent:myDataController->gasStations[indexpath.row][@"Worktime"]];
+        [[segue destinationViewController] setDateupdateContent:Dateupdate];
+        
+    }
+    if([segue.identifier isEqualToString:@"detailmapSegue"]){
+        NSUInteger index = [mapV.annotations indexOfObject:sender ];
+        //date to string
+        NSLog(@"%d", index);
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"dd.MM.YYYY"];
+        [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"..."]];
+        //Передача аргументов
+        int a = [myDataController->gasStations[index][@"Comp_id"] intValue];
+        NSString *detName = myDataController->company[a][@"Name"];
+        NSString *detImage = myDataController->company[a][@"Logo"];
+        NSString *Dateupdate = [formatter stringFromDate:myDataController->gasStations[index][@"Dateupdate"]];
+        UIImage * Image = [UIImage imageNamed: detImage];
+        [[segue destinationViewController] setNameContent:detName];
+        [[segue destinationViewController] setImageContent:Image];
+        [[segue destinationViewController] setAddressContent:myDataController->gasStations[index][@"Address"]];
+        [[segue destinationViewController] setRatingContent:myDataController->gasStations[index][@"Rating"]];
+        [[segue destinationViewController] setPriceContent:myDataController->gasStations[index][@"Price"]];
+        [[segue destinationViewController] setFueltypeContent:myDataController->gasStations[index][@"Fueltype"]];
+        [[segue destinationViewController] setExtraContent:myDataController->gasStations[index][@"Extra"]];
+        [[segue destinationViewController] setWorktimeContent:myDataController->gasStations[index][@"Worktime"]];
         [[segue destinationViewController] setDateupdateContent:Dateupdate];
         
     }
@@ -204,11 +224,9 @@ DataController *myDataController;
         return nil;
     }
     int i;
-    for(i=0; i<myDataController->countCompany-1; i++){
-        if([myDataController->company[i][@"Name"] isEqual: [annotation title]]){
-            NSLog(@"%@",[annotation title]);
+    for(i=0; i<myDataController->countCompany; i++){
+        if([myDataController->company[i][@"Name"] isEqual: [annotation title]])
             break;
-        }
     }
     NSString *annotationIdentifier = [annotation title];
     MKPinAnnotationView *mapAnnotation= (MKPinAnnotationView *) [mapView
@@ -237,7 +255,7 @@ DataController *myDataController;
 }
 
 -(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
-    [self performSegueWithIdentifier:@"detailSegue" sender:view];
+    [self performSegueWithIdentifier:@"detailmapSegue" sender:view.annotation];
 }
 
 @end

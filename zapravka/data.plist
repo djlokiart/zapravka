@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>Name</key>
-			<string>Газпром-нефть</string>
+			<string>Газпромнефть</string>
 			<key>Logo</key>
 			<string>gazprom-neft.jpg</string>
 		</dict>
@@ -29,11 +29,11 @@
 			<key>Comp_id</key>
 			<integer>0</integer>
 			<key>Price</key>
-			<string>0,0,0,0,0</string>
+			<string>25.50,30.50,33.35,34.40,32.90</string>
 			<key>Rating</key>
 			<real>4.5</real>
 			<key>Fueltype</key>
-			<string>АИ-92, АИ-95, ДТ, пропан</string>
+			<string>АИ-80, АИ-92, АИ-95, АИ-98, ДТ</string>
 			<key>Worktime</key>
 			<string>24/7, 19:00-19:20 - тех. перерыв</string>
 			<key>Address</key>
