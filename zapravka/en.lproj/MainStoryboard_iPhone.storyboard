@@ -127,9 +127,9 @@
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" text="Адрес" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="122" translatesAutoresizingMaskIntoConstraints="NO" id="mtV-yW-4Wc">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="122" id="42E-NN-wij"/>
+                                    <constraint firstAttribute="width" constant="122" id="0Iz-Qv-8O5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -149,7 +149,7 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Тип топлива:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrD-8r-Tk7">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="106" id="DAK-zk-zb6"/>
+                                    <constraint firstAttribute="width" constant="106" id="XDa-dv-b26"/>
                                     <constraint firstAttribute="height" constant="21" id="hG1-Rq-HuP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -174,6 +174,7 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YK1-Tl-iXd">
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="JWF-e1-DoS"/>
                                     <constraint firstAttribute="height" constant="21" id="f7y-A9-QuS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -182,7 +183,7 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Рейтинг" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c88-J2-4T3">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="114" id="hu5-S4-Vzd"/>
+                                    <constraint firstAttribute="width" constant="72" id="AEu-IP-zpc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -218,10 +219,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWM-GL-GgE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="wSe-ec-Yvw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="03z-2b-5dh" firstAttribute="leading" secondItem="0Pk-uB-324" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4gP-ni-c4y"/>
+                            <constraint firstAttribute="trailing" secondItem="rWM-GL-GgE" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="6pb-1j-n4h"/>
                             <constraint firstAttribute="trailing" secondItem="4Ln-qn-IKS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7hW-y7-t7r"/>
                             <constraint firstItem="R5x-Xl-mhw" firstAttribute="leading" secondItem="YK1-Tl-iXd" secondAttribute="leading" type="default" id="8vy-9T-DEA"/>
                             <constraint firstItem="rEM-p1-qVr" firstAttribute="leading" secondItem="0Pk-uB-324" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="9O6-IV-O8I"/>
@@ -236,10 +246,10 @@
                             <constraint firstItem="dQw-6A-GAG" firstAttribute="leading" secondItem="0Pk-uB-324" secondAttribute="leading" constant="88" id="IbC-hb-Pa0"/>
                             <constraint firstItem="c88-J2-4T3" firstAttribute="leading" secondItem="mtV-yW-4Wc" secondAttribute="leading" type="default" id="KS4-nK-khG"/>
                             <constraint firstItem="R5x-Xl-mhw" firstAttribute="leading" secondItem="vok-3C-06q" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="KhD-hw-B8G"/>
+                            <constraint firstItem="R5x-Xl-mhw" firstAttribute="baseline" secondItem="vok-3C-06q" secondAttribute="baseline" type="default" id="MGT-9W-bhk"/>
                             <constraint firstItem="03z-2b-5dh" firstAttribute="top" secondItem="jrD-8r-Tk7" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="RHH-Ix-vmR"/>
                             <constraint firstItem="ObI-lI-joS" firstAttribute="leading" secondItem="jrD-8r-Tk7" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="TUW-RE-9iS"/>
                             <constraint firstItem="E5h-Lo-Wm9" firstAttribute="top" secondItem="QZg-ai-TaR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="TrB-Yz-a87"/>
-                            <constraint firstItem="R5x-Xl-mhw" firstAttribute="bottom" secondItem="vok-3C-06q" secondAttribute="bottom" type="default" id="VNN-wD-sW0"/>
                             <constraint firstItem="YK1-Tl-iXd" firstAttribute="leading" secondItem="03z-2b-5dh" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="WYd-Ob-46q"/>
                             <constraint firstAttribute="bottom" secondItem="dQw-6A-GAG" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="YSA-ao-L5D"/>
                             <constraint firstItem="E5h-Lo-Wm9" firstAttribute="leading" secondItem="rEM-p1-qVr" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="YhJ-DK-WND"/>
@@ -256,8 +266,8 @@
                             <constraint firstItem="QZg-ai-TaR" firstAttribute="top" secondItem="0Pk-uB-324" secondAttribute="top" constant="58" id="lt0-Ev-qBZ"/>
                             <constraint firstItem="rEM-p1-qVr" firstAttribute="top" secondItem="QZg-ai-TaR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="p1Q-XW-D57"/>
                             <constraint firstAttribute="trailing" secondItem="E5h-Lo-Wm9" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="q50-kk-r02"/>
-                            <constraint firstItem="YK1-Tl-iXd" firstAttribute="trailing" secondItem="c88-J2-4T3" secondAttribute="trailing" type="default" id="qpF-6n-waB"/>
                             <constraint firstItem="jrD-8r-Tk7" firstAttribute="leading" secondItem="0Pk-uB-324" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qvw-xR-8l3"/>
+                            <constraint firstItem="rWM-GL-GgE" firstAttribute="top" secondItem="0Pk-uB-324" secondAttribute="top" constant="20" symbolic="YES" type="default" id="rTC-Or-W7T"/>
                             <constraint firstItem="mtV-yW-4Wc" firstAttribute="top" secondItem="QZg-ai-TaR" secondAttribute="top" type="default" id="wU0-Kb-Uv0"/>
                             <constraint firstItem="jrD-8r-Tk7" firstAttribute="top" secondItem="E5h-Lo-Wm9" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="xqt-Yt-j5H"/>
                         </constraints>
@@ -271,7 +281,7 @@
                         <outlet property="dImage" destination="QZg-ai-TaR" id="3io-x6-C2w"/>
                         <outlet property="dName" destination="Z7m-B8-UxK" id="Z3k-i5-fZz"/>
                         <outlet property="dPrice" destination="E5h-Lo-Wm9" id="d38-DD-gex"/>
-                        <outlet property="dRating" destination="c88-J2-4T3" id="0ao-wM-2zC"/>
+                        <outlet property="dRating" destination="rWM-GL-GgE" id="aq9-Ad-bbt"/>
                         <outlet property="dWorktime" destination="YK1-Tl-iXd" id="ZoQ-Xo-ZdJ"/>
                         <outlet property="navBar" destination="ZuK-7S-vGh" id="UbC-Rh-Wx4"/>
                     </connections>

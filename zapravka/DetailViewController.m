@@ -35,6 +35,7 @@
     self.dAddress.text = self.addressContent;
     [self.dImage setImage:imageContent];
     self.dExtra.text = self.extraContent;
+    self.dRating.text = [self.ratingContent stringValue];
     self.dFueltype.text = self.fueltypeContent;
     self.dWorktime.text = self.worktimeContent;
     self.dDateupdate.text = self.dateupdateContent;
