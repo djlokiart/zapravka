@@ -17,7 +17,7 @@
 @property (strong, nonatomic) IBOutlet UITableView *listV;
 @property (strong, nonatomic) IBOutlet MKMapView *mapV;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmentControl;
-
+///////////
 //maps
 @property (strong, nonatomic) TileOverlay *overlay;
 - (IBAction)valueChange:(UISegmentedControl*)sender;
