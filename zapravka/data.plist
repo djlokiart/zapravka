@@ -29,11 +29,11 @@
 			<key>Comp_id</key>
 			<integer>0</integer>
 			<key>Price</key>
-			<string>25.50,30.50,33.35,34.40,32.90</string>
+			<string>33.35,25.50,30.50,34.40,32.90</string>
 			<key>Rating</key>
 			<real>4.5</real>
 			<key>Fueltype</key>
-			<string>АИ-80, АИ-92, АИ-95, АИ-98, ДТ</string>
+			<string>АИ-95, АИ-80, АИ-92, АИ-98, ДТ</string>
 			<key>Worktime</key>
 			<string>24/7, 19:00-19:20 - тех. перерыв</string>
 			<key>Address</key>
@@ -53,11 +53,11 @@
 			<key>Comp_id</key>
 			<integer>1</integer>
 			<key>Price</key>
-			<string>30.25,33.15,32.85,0</string>
+			<string>30.25,33.15,32.85</string>
 			<key>Rating</key>
 			<integer>4</integer>
 			<key>Fueltype</key>
-			<string>АИ-92, АИ-95, ДТ, пропан</string>
+			<string>АИ-92, АИ-95, ДТ</string>
 			<key>Worktime</key>
 			<string>24/7</string>
 			<key>Address</key>
@@ -77,11 +77,11 @@
 			<key>Comp_id</key>
 			<integer>2</integer>
 			<key>Price</key>
-			<string>30.70,34.35,32.85,0</string>
+			<string>30.70,34.35,32.85</string>
 			<key>Rating</key>
 			<real>4.7</real>
 			<key>Fueltype</key>
-			<string>АИ-92, АИ-95, ДТ, пропан</string>
+			<string>АИ-92, АИ-95, ДТ</string>
 			<key>Worktime</key>
 			<string>24/7</string>
 			<key>Address</key>

@@ -37,6 +37,7 @@
 		229BF75E192DCCDA00045540 /* gazprom-neft.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 229BF75B192DCCDA00045540 /* gazprom-neft.jpg */; };
 		229BF75F192DCCDA00045540 /* lykoil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 229BF75C192DCCDA00045540 /* lykoil.jpg */; };
 		229BF760192DCCDA00045540 /* taxioil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 229BF75D192DCCDA00045540 /* taxioil.jpg */; };
+		22CE7C46193335CE00CE6827 /* detailButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 22CE7C45193335CE00CE6827 /* detailButton.png */; };
 		22D68416192F52AD007B03FF /* default.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 22D68415192F52AD007B03FF /* default.gpx */; };
 		B3B08B81192E6AAC00AEA5A0 /* zapravkalogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B08B80192E6AAC00AEA5A0 /* zapravkalogo.png */; };
 /* End PBXBuildFile section */
@@ -94,6 +95,7 @@
 		229BF75B192DCCDA00045540 /* gazprom-neft.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gazprom-neft.jpg"; sourceTree = "<group>"; };
 		229BF75C192DCCDA00045540 /* lykoil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lykoil.jpg; sourceTree = "<group>"; };
 		229BF75D192DCCDA00045540 /* taxioil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = taxioil.jpg; sourceTree = "<group>"; };
+		22CE7C45193335CE00CE6827 /* detailButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detailButton.png; sourceTree = "<group>"; };
 		22D68415192F52AD007B03FF /* default.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = default.gpx; sourceTree = "<group>"; };
 		B3B08B80192E6AAC00AEA5A0 /* zapravkalogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zapravkalogo.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -191,6 +193,7 @@
 		22701D01191BC5B80095D8DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				22CE7C45193335CE00CE6827 /* detailButton.png */,
 				22794CA21932581A0011C7E4 /* zapravkalogobig.jpg */,
 				220751CD1930D3010024B17C /* zapravka.png */,
 				B3B08B80192E6AAC00AEA5A0 /* zapravkalogo.png */,
@@ -322,6 +325,7 @@
 				22D68416192F52AD007B03FF /* default.gpx in Resources */,
 				220751CE1930D3010024B17C /* zapravka.png in Resources */,
 				22794CA31932581A0011C7E4 /* zapravkalogobig.jpg in Resources */,
+				22CE7C46193335CE00CE6827 /* detailButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

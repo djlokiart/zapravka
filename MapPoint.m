@@ -10,17 +10,18 @@
 
 @implementation MapPoint
 @synthesize title;
-@synthesize subTitle;
+@synthesize subtitle;
 @synthesize coordinate;
+@synthesize annotId;
 
 
-- (id)initWithCoordinate:(CLLocationCoordinate2D)c title:(NSString *)t subTitle:(NSString *)st
+- (id)initWithCoordinate:(CLLocationCoordinate2D)c title:(NSString *)t subtitle:(NSString *)st
 {
     self = [super init];
     if (self) {
         coordinate = c;
         title = t;
-        subTitle = st;
+        subtitle = st;
     }
     
     return self;

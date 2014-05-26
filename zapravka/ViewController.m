@@ -142,40 +142,24 @@ DataController *myDataController;
     }
     //preferences cell
     int a = [myDataController->gasStations[indexPath.row][@"Comp_id"] intValue];
-    cell.textLabel.text = [[myDataController->company[a][@"Name"] stringByAppendingString: @" - " ]stringByAppendingString: myDataController->gasStations[indexPath.row][@"Address"]];
+    cell.textLabel.text = [[[myDataController->company[a][@"Name"] stringByAppendingString: @" - " ]stringByAppendingString: @"АИ-95: "] stringByAppendingString: [myDataController->gasStations[indexPath.row][@"Price"] substringToIndex: 5]];
+    cell.detailTextLabel.text = myDataController->gasStations[indexPath.row][@"Address"];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.identifier isEqualToString:@"detailSegue"]){
-        NSIndexPath *indexpath = nil;
-        indexpath = [listV indexPathForSelectedRow];
+    int index = 0;
+    if([segue.identifier isEqualToString:@"detailSegue"] || [segue.identifier isEqualToString:@"detailmapSegue"]){
+        if([segue.identifier isEqualToString:@"detailSegue"]){
+            NSIndexPath *indexpath = nil;
+            indexpath = [listV indexPathForSelectedRow];
+            index = indexpath.row;
+        }
+        else{
+            index = [sender annotId];
+        }
         //date to string
-        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        [formatter setDateFormat:@"dd.MM.YYYY"];
-        [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"..."]];
-        //Передача аргументов
-        int a = [myDataController->gasStations[indexpath.row][@"Comp_id"] intValue];
-        NSString *detName = myDataController->company[a][@"Name"];
-        NSString *detImage = myDataController->company[a][@"Logo"];
-        NSString *Dateupdate = [formatter stringFromDate:myDataController->gasStations[indexpath.row][@"Dateupdate"]];
-        UIImage * Image = [UIImage imageNamed: detImage];
-        [[segue destinationViewController] setNameContent:detName];
-        [[segue destinationViewController] setImageContent:Image];
-        [[segue destinationViewController] setAddressContent:myDataController->gasStations[indexpath.row][@"Address"]];
-        [[segue destinationViewController] setRatingContent:myDataController->gasStations[indexpath.row][@"Rating"]];
-        [[segue destinationViewController] setPriceContent:myDataController->gasStations[indexpath.row][@"Price"]];
-        [[segue destinationViewController] setFueltypeContent:myDataController->gasStations[indexpath.row][@"Fueltype"]];
-        [[segue destinationViewController] setExtraContent:myDataController->gasStations[indexpath.row][@"Extra"]];
-        [[segue destinationViewController] setWorktimeContent:myDataController->gasStations[indexpath.row][@"Worktime"]];
-        [[segue destinationViewController] setDateupdateContent:Dateupdate];
-        
-    }
-    if([segue.identifier isEqualToString:@"detailmapSegue"]){
-        NSUInteger index = [mapV.annotations indexOfObject:sender ];
-        //date to string
-        NSLog(@"%d", index);
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:@"dd.MM.YYYY"];
         [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"..."]];
@@ -194,7 +178,6 @@ DataController *myDataController;
         [[segue destinationViewController] setExtraContent:myDataController->gasStations[index][@"Extra"]];
         [[segue destinationViewController] setWorktimeContent:myDataController->gasStations[index][@"Worktime"]];
         [[segue destinationViewController] setDateupdateContent:Dateupdate];
-        
     }
 }
 
@@ -212,7 +195,8 @@ DataController *myDataController;
     {
         int a = [myDataController->gasStations[i][@"Comp_id"] intValue];
         CLLocationCoordinate2D newCoord = { [myDataController->gasStations[i][@"Coordinate-d"] doubleValue], [myDataController->gasStations[i][@"Coordinate-s"] doubleValue] };
-        MapPoint *mapPoint = [[MapPoint alloc] initWithCoordinate:newCoord title:myDataController->company[a][@"Name"] subTitle:@"Zapravka"];
+        MapPoint *mapPoint = [[MapPoint alloc] initWithCoordinate:newCoord title:myDataController->company[a][@"Name"] subtitle:[@"АИ-95 " stringByAppendingString: [myDataController->gasStations[i][@"Price"] substringToIndex:5]]];
+        mapPoint.annotId = i;
         [mapView addAnnotation:mapPoint];
         
     }
@@ -228,6 +212,7 @@ DataController *myDataController;
         if([myDataController->company[i][@"Name"] isEqual: [annotation title]])
             break;
     }
+    //NSLog(@" AnnotSubtitle: %@", [annotation subtitle]);
     NSString *annotationIdentifier = [annotation title];
     MKPinAnnotationView *mapAnnotation= (MKPinAnnotationView *) [mapView
                                                             dequeueReusableAnnotationViewWithIdentifier:annotationIdentifier];
@@ -242,7 +227,9 @@ DataController *myDataController;
     {
         annotationIcon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"zapravka.png"]];
     }
-    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [rightButton setBackgroundColor:[UIColor clearColor]];
+    [rightButton setImage:[UIImage imageNamed:@"detailButton.png"] forState:UIControlStateNormal];
     [rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
     mapAnnotation.rightCalloutAccessoryView = rightButton;
     [annotationIcon setFrame:CGRectMake(0, 0, 30, 30)];
