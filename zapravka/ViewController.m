@@ -17,6 +17,8 @@
 @synthesize listV;
 @synthesize segmentControl;
 @synthesize overlay;
+@synthesize contentView;
+
 DataController *myDataController;
 
 - (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
@@ -31,6 +33,12 @@ DataController *myDataController;
 }
 
 -(IBAction) valueChange:(UISegmentedControl *)sender{
+    self.view.userInteractionEnabled = YES;
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationDelegate:self];
+    //[UIView setAnimationDidStopSelector:@selector(viewAnimationDidStop:finished:context:)];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:contentView cache:YES];
     switch (sender.selectedSegmentIndex) {
         case 0:
             self.mapV.hidden=NO;
@@ -43,15 +51,8 @@ DataController *myDataController;
         default:
             break;
     }
+    [UIView commitAnimations];
 }
-
-/*- (void)dealloc
-{
-    //[super dealloc];
-    self.mapV=nil;
-    
-
-}*/
 
 -(void)viewDidUnload
 {
