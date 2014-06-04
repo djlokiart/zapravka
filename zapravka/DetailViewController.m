@@ -39,6 +39,15 @@
     self.dFueltype.text = self.fueltypeContent;
     self.dWorktime.text = self.worktimeContent;
     self.dDateupdate.text = self.dateupdateContent;
+    
+    
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"fon2.jpg"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+
 }
 -(void)viewWillAppear:(BOOL)animated
 {
