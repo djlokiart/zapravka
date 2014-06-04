@@ -31,6 +31,15 @@
         [company enumerateObjectsUsingBlock:^(id obj, NSUInteger index, BOOL *stop) {
             ++countCompany;
         }];
+        
+        //////////////
+        gastype=[NSArray arrayWithArray:[dictRoot objectForKey:@"Gas"]];
+        countGas = 0;
+        [company enumerateObjectsUsingBlock:^(id obj, NSUInteger index, BOOL *stop) {
+            ++countGas;
+        }];
+
+        
 
         NSLog(@"CountCompany: %d", self->countCompany);
 

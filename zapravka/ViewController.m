@@ -10,6 +10,7 @@
 #import "DataController.h"
 #import "DetailViewController.h"
 #import "MapPoint.h"
+#import "MyGlobal.h"
 
 @implementation ViewController
 
@@ -89,8 +90,8 @@ DataController *myDataController;
     CGRect frame = CGRectMake(500,500,5000,200);
     segmentControl.frame = frame;
     segmentControl.segmentedControlStyle = UISegmentedControlStyleBar;
-    segmentControl.backgroundColor=[UIColor blackColor];
-    [segmentControl setTintColor:[UIColor orangeColor]];
+    segmentControl.backgroundColor=[UIColor greenColor];
+    [segmentControl setTintColor:[UIColor blueColor]];
     
     [self mapViewPointer:mapV];
 }
@@ -143,7 +144,31 @@ DataController *myDataController;
     }
     //preferences cell
     int a = [myDataController->gasStations[indexPath.row][@"Comp_id"] intValue];
-    cell.textLabel.text = [[[myDataController->company[a][@"Name"] stringByAppendingString: @" - " ]stringByAppendingString: @"АИ-95: "] stringByAppendingString: [myDataController->gasStations[indexPath.row][@"Price"] substringToIndex: 5]];
+    
+    int tempType = [MyGlobal getGlobalValue];
+    NSString *tempStr;
+    switch (tempType) {
+        case 0:
+            tempStr = @"АИ-98: ";
+            break;
+        case 1:
+            tempStr = @"АИ-95: ";
+            break;
+        case 2:
+            tempStr = @"АИ-92: ";
+            break;
+        case 3:
+            tempStr = @"АИ-80: ";
+            break;
+        case 4:
+            tempStr = @"ДТ: ";
+            break;
+        default:
+            tempStr = @"АИ-92: ";
+            break;
+    }
+    
+    cell.textLabel.text = [[[myDataController->company[a][@"Name"] stringByAppendingString: @" - " ]stringByAppendingString: tempStr] stringByAppendingString: [myDataController->gasStations[indexPath.row][@"newPrice"][tempType] substringToIndex: 5]];
     cell.detailTextLabel.text = myDataController->gasStations[indexPath.row][@"Address"];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
@@ -196,9 +221,33 @@ DataController *myDataController;
     {
         int a = [myDataController->gasStations[i][@"Comp_id"] intValue];
         CLLocationCoordinate2D newCoord = { [myDataController->gasStations[i][@"Coordinate-d"] doubleValue], [myDataController->gasStations[i][@"Coordinate-s"] doubleValue] };
-        MapPoint *mapPoint = [[MapPoint alloc] initWithCoordinate:newCoord title:myDataController->company[a][@"Name"] subtitle:[@"АИ-95 " stringByAppendingString: [myDataController->gasStations[i][@"Price"] substringToIndex:5]]];
+        int tempType = [MyGlobal getGlobalValue];
+        NSString *tempStr;
+        switch (tempType) {
+            case 0:
+                tempStr = @"АИ-98 ";
+                break;
+            case 1:
+                tempStr = @"АИ-95 ";
+                break;
+            case 2:
+                tempStr = @"АИ-92 ";
+                break;
+            case 3:
+                tempStr = @"АИ-80 ";
+                break;
+            case 4:
+                tempStr = @"ДТ ";
+                break;
+            default:
+                tempStr = @"АИ-92 ";
+                break;
+        }
+        
+        MapPoint *mapPoint = [[MapPoint alloc] initWithCoordinate:newCoord title:myDataController->company[a][@"Name"] subtitle:[tempStr stringByAppendingString: [myDataController->gasStations[i][@"newPrice"][tempType] substringToIndex:5]]];
         mapPoint.annotId = i;
         [mapView addAnnotation:mapPoint];
+        
         
     }
 }

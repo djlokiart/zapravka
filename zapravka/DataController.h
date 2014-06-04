@@ -13,8 +13,10 @@
     @public
     NSArray *gasStations;
     NSArray *company;
+    NSArray *gastype;
     int count;
     int countCompany;
+    int countGas;
 }
 - (id)init;
 @end
