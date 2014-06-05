@@ -37,7 +37,7 @@
 			<key>Comp_id</key>
 			<integer>0</integer>
 			<key>Price</key>
-			<string>33.85,25.50,30.70,34.40,33.00</string>
+			<string>33.55,25.50,30.70,34.40,33.00</string>
 			<key>newPrice</key>
 			<array>
 				<string>34.40</string>
@@ -103,11 +103,11 @@
 		<dict>
 			<key>newPrice</key>
 			<array>
-				<string>33.35</string>
-				<string>25.50</string>
-				<string>30.50</string>
-				<string>34.40</string>
-				<string>32.90</string>
+				<string>34.35</string>
+				<string>35.50</string>
+				<string>30.45</string>
+				<string>24.40</string>
+				<string>32.85</string>
 			</array>
 			<key>Fuel_name_and_Price_list</key>
 			<array>
@@ -139,7 +139,7 @@
 			<key>Comp_id</key>
 			<integer>1</integer>
 			<key>Price</key>
-			<string>30.25,33.15,32.85</string>
+			<string>30.45,35.50,32.85</string>
 			<key>Rating</key>
 			<integer>4</integer>
 			<key>Fueltype</key>
@@ -162,11 +162,11 @@
 		<dict>
 			<key>newPrice</key>
 			<array>
-				<string>33.35</string>
-				<string>25.50</string>
-				<string>30.50</string>
-				<string>34.40</string>
-				<string>32.90</string>
+				<string>35.00</string>
+				<string>33.85</string>
+				<string>30.70</string>
+				<string>24.40</string>
+				<string>33.40</string>
 			</array>
 			<key>Fuel_name_and_Price_list</key>
 			<array>
@@ -198,11 +198,11 @@
 			<key>Comp_id</key>
 			<integer>2</integer>
 			<key>Price</key>
-			<string>33.85,30.70,34.35,33.40</string>
+			<string>33.85,30.70,35.00,33.40</string>
 			<key>Rating</key>
 			<real>4.7</real>
 			<key>Fueltype</key>
-			<string>АИ-95, АИ-92, АИ-98, Д</string>
+			<string>АИ-95, АИ-92, АИ-98, ДТ</string>
 			<key>Worktime</key>
 			<string>24/7</string>
 			<key>Address</key>
@@ -257,7 +257,7 @@
 			<key>Comp_id</key>
 			<integer>2</integer>
 			<key>Price</key>
-			<string>35.00,33.85,30.70,33.40</string>
+			<string>33.85,30.70,35.00,33.40</string>
 			<key>Rating</key>
 			<real>4.7</real>
 			<key>Fueltype</key>
@@ -280,11 +280,11 @@
 		<dict>
 			<key>newPrice</key>
 			<array>
-				<string>33.35</string>
-				<string>25.50</string>
-				<string>30.50</string>
-				<string>34.40</string>
-				<string>32.90</string>
+				<string>35.00</string>
+				<string>33.85</string>
+				<string>30.70</string>
+				<string>24.40</string>
+				<string>33.40</string>
 			</array>
 			<key>Fuel_name_and_Price_list</key>
 			<array>
@@ -339,11 +339,11 @@
 		<dict>
 			<key>newPrice</key>
 			<array>
-				<string>33.35</string>
-				<string>25.50</string>
-				<string>30.50</string>
-				<string>34.40</string>
-				<string>32.90</string>
+				<string>35.00</string>
+				<string>33.85</string>
+				<string>30.70</string>
+				<string>24.40</string>
+				<string>33.40</string>
 			</array>
 			<key>Fuel_name_and_Price_list</key>
 			<array>
@@ -394,6 +394,333 @@
 			<date>2014-05-25T14:00:55Z</date>
 			<key>Extra</key>
 			<string>Магазин</string>
+		</dict>
+		<dict>
+			<key>Comp_id</key>
+			<integer>0</integer>
+			<key>Price</key>
+			<string>33.55,25.50,30.70,34.40,33.00</string>
+			<key>newPrice</key>
+			<array>
+				<string>34.40</string>
+				<string>33.55</string>
+				<string>30,70</string>
+				<string>25.50</string>
+				<string>33.00</string>
+			</array>
+			<key>Fuel_name_and_Price_list</key>
+			<array>
+				<dict>
+					<key>Gas_type</key>
+					<integer>4</integer>
+					<key>Gas_name</key>
+					<string>ДТ</string>
+					<key>Gas_price</key>
+					<string>34</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>1</integer>
+					<key>Gas_name</key>
+					<string>АИ-95G</string>
+					<key>Gas_price</key>
+					<string>38</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>0</integer>
+					<key>Gas_name</key>
+					<string>АИ-98</string>
+					<key>Gas_price</key>
+					<string>35</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>1</integer>
+					<key>Gas_name</key>
+					<string>АИ-95</string>
+					<key>Gas_price</key>
+					<string>33</string>
+				</dict>
+			</array>
+			<key>Rating</key>
+			<real>4.5</real>
+			<key>Fueltype</key>
+			<string>АИ-95, АИ-80, АИ-92, АИ-98, ДТ</string>
+			<key>Worktime</key>
+			<string>24/7, 19:00-19:20 - тех. перерыв</string>
+			<key>Address</key>
+			<string>Ул. Комсомольская пл., 3а, Нижний Новгород</string>
+			<key>Coordinate-d</key>
+			<real>56.29936</real>
+			<key>Coordinate-s</key>
+			<real>43.94537</real>
+			<key>Pay</key>
+			<string>Наличные, Visa, MasterCard</string>
+			<key>Dateupdate</key>
+			<date>2014-06-05T05:44:55Z</date>
+			<key>Extra</key>
+			<string>Туалет</string>
+		</dict>
+		<dict>
+			<key>Comp_id</key>
+			<integer>0</integer>
+			<key>Price</key>
+			<string>33.55,25.50,30.70,34.40,33.00</string>
+			<key>newPrice</key>
+			<array>
+				<string>34.40</string>
+				<string>33.55</string>
+				<string>30,70</string>
+				<string>25.50</string>
+				<string>33.00</string>
+			</array>
+			<key>Fuel_name_and_Price_list</key>
+			<array>
+				<dict>
+					<key>Gas_type</key>
+					<integer>4</integer>
+					<key>Gas_name</key>
+					<string>ДТ</string>
+					<key>Gas_price</key>
+					<string>34</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>1</integer>
+					<key>Gas_name</key>
+					<string>АИ-95G</string>
+					<key>Gas_price</key>
+					<string>38</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>0</integer>
+					<key>Gas_name</key>
+					<string>АИ-98</string>
+					<key>Gas_price</key>
+					<string>35</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>1</integer>
+					<key>Gas_name</key>
+					<string>АИ-95</string>
+					<key>Gas_price</key>
+					<string>33</string>
+				</dict>
+			</array>
+			<key>Rating</key>
+			<real>4.5</real>
+			<key>Fueltype</key>
+			<string>АИ-95, АИ-80, АИ-92, АИ-98, ДТ</string>
+			<key>Worktime</key>
+			<string>24/7, 19:00-19:20 - тех. перерыв</string>
+			<key>Address</key>
+			<string>Ул. Героя Попова ,58в, Нижний Новгород</string>
+			<key>Coordinate-d</key>
+			<real>56.256446</real>
+			<key>Coordinate-s</key>
+			<real>43.931121</real>
+			<key>Pay</key>
+			<string>Наличные, Visa, MasterCard</string>
+			<key>Dateupdate</key>
+			<date>2014-06-04T05:43:55Z</date>
+			<key>Extra</key>
+			<string>Туалет</string>
+		</dict>
+		<dict>
+			<key>Comp_id</key>
+			<integer>0</integer>
+			<key>Price</key>
+			<string>33.55,25.50,30.70,34.40,33.00</string>
+			<key>newPrice</key>
+			<array>
+				<string>34.40</string>
+				<string>33.55</string>
+				<string>30,70</string>
+				<string>25.50</string>
+				<string>33.00</string>
+			</array>
+			<key>Fuel_name_and_Price_list</key>
+			<array>
+				<dict>
+					<key>Gas_type</key>
+					<integer>4</integer>
+					<key>Gas_name</key>
+					<string>ДТ</string>
+					<key>Gas_price</key>
+					<string>34</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>1</integer>
+					<key>Gas_name</key>
+					<string>АИ-95G</string>
+					<key>Gas_price</key>
+					<string>38</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>0</integer>
+					<key>Gas_name</key>
+					<string>АИ-98</string>
+					<key>Gas_price</key>
+					<string>35</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>1</integer>
+					<key>Gas_name</key>
+					<string>АИ-95</string>
+					<key>Gas_price</key>
+					<string>33</string>
+				</dict>
+			</array>
+			<key>Rating</key>
+			<real>4.5</real>
+			<key>Fueltype</key>
+			<string>АИ-95, АИ-80, АИ-92, АИ-98, ДТ</string>
+			<key>Worktime</key>
+			<string>24/7, 19:00-19:20 - тех. перерыв</string>
+			<key>Address</key>
+			<string>Ул.Федосеенко ,63, Нижний Новгород</string>
+			<key>Coordinate-d</key>
+			<real>56.33669</real>
+			<key>Coordinate-s</key>
+			<real>43.798689</real>
+			<key>Pay</key>
+			<string>Наличные, Visa, MasterCard</string>
+			<key>Dateupdate</key>
+			<date>2014-06-04T05:43:55Z</date>
+			<key>Extra</key>
+			<string>Туалет</string>
+		</dict>
+		<dict>
+			<key>Comp_id</key>
+			<integer>0</integer>
+			<key>Price</key>
+			<string>33.55,25.50,30.70,34.40,33.00</string>
+			<key>newPrice</key>
+			<array>
+				<string>34.40</string>
+				<string>33.55</string>
+				<string>30,70</string>
+				<string>25.50</string>
+				<string>33.00</string>
+			</array>
+			<key>Fuel_name_and_Price_list</key>
+			<array>
+				<dict>
+					<key>Gas_type</key>
+					<integer>4</integer>
+					<key>Gas_name</key>
+					<string>ДТ</string>
+					<key>Gas_price</key>
+					<string>34</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>1</integer>
+					<key>Gas_name</key>
+					<string>АИ-95G</string>
+					<key>Gas_price</key>
+					<string>38</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>0</integer>
+					<key>Gas_name</key>
+					<string>АИ-98</string>
+					<key>Gas_price</key>
+					<string>35</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>1</integer>
+					<key>Gas_name</key>
+					<string>АИ-95</string>
+					<key>Gas_price</key>
+					<string>33</string>
+				</dict>
+			</array>
+			<key>Rating</key>
+			<real>4.5</real>
+			<key>Fueltype</key>
+			<string>АИ-95, АИ-80, АИ-92, АИ-98, ДТ</string>
+			<key>Worktime</key>
+			<string>24/7, 19:00-19:20 - тех. перерыв</string>
+			<key>Address</key>
+			<string>Ул.Ярошенко ,1а, Нижний Новгород</string>
+			<key>Coordinate-d</key>
+			<real>56.330379</real>
+			<key>Coordinate-s</key>
+			<real>43.857937</real>
+			<key>Pay</key>
+			<string>Наличные, Visa, MasterCard</string>
+			<key>Dateupdate</key>
+			<date>2014-06-04T05:43:55Z</date>
+			<key>Extra</key>
+			<string>Туалет</string>
+		</dict>
+		<dict>
+			<key>newPrice</key>
+			<array>
+				<string>34.35</string>
+				<string>35.50</string>
+				<string>30.45</string>
+				<string>24.40</string>
+				<string>32.85</string>
+			</array>
+			<key>Fuel_name_and_Price_list</key>
+			<array>
+				<dict>
+					<key>Gas_type</key>
+					<integer>1</integer>
+					<key>Gas_name</key>
+					<string>АИ-95</string>
+					<key>Gas_price</key>
+					<string>35</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>0</integer>
+					<key>Gas_name</key>
+					<string>АИ-98</string>
+					<key>Gas_price</key>
+					<string>35.50</string>
+				</dict>
+				<dict>
+					<key>Gas_type</key>
+					<integer>2</integer>
+					<key>Gas_name</key>
+					<string>АИ-92</string>
+					<key>Gas_price</key>
+					<string>32</string>
+				</dict>
+			</array>
+			<key>Comp_id</key>
+			<integer>1</integer>
+			<key>Price</key>
+			<string>30.45,35.50,32.85</string>
+			<key>Rating</key>
+			<integer>4</integer>
+			<key>Fueltype</key>
+			<string>АИ-92, АИ-95, ДТ</string>
+			<key>Worktime</key>
+			<string>24/7</string>
+			<key>Address</key>
+			<string>Ул. Долгополова 84А, Нижний Новгород</string>
+			<key>Coordinate-d</key>
+			<string>56.314236</string>
+			<key>Coordinate-s</key>
+			<real>43.945455</real>
+			<key>Pay</key>
+			<string>Наличные, Visa, MasterCard</string>
+			<key>Dateupdate</key>
+			<date>2014-06-05T06:43:55Z</date>
+			<key>Extra</key>
+			<string>Туалет</string>
 		</dict>
 	</array>
 </dict>
