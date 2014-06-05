@@ -38,8 +38,7 @@
 		229BF760192DCCDA00045540 /* taxioil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 229BF75D192DCCDA00045540 /* taxioil.jpg */; };
 		22CE7C46193335CE00CE6827 /* detailButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 22CE7C45193335CE00CE6827 /* detailButton.png */; };
 		22D68416192F52AD007B03FF /* default.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 22D68415192F52AD007B03FF /* default.gpx */; };
-		849F3071193CEAE9002C8CAC /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F3070193CEAE9002C8CAC /* button1.png */; };
-		84A0000E194045E900E2B5B2 /* 76.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A0000D194045E900E2B5B2 /* 76.png */; };
+		84A021DF194088DD00A8DA6E /* 76.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A021DE194088DD00A8DA6E /* 76.png */; };
 		84A46FD9193F58BE009AE451 /* fon2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A46FD7193F58BE009AE451 /* fon2.jpg */; };
 		84AB7DEE193E3D6B00C8F947 /* основной_фон.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84AB7DED193E3D6B00C8F947 /* основной_фон.jpg */; };
 		84AB7DF0193E3F9100C8F947 /* 98.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AB7DEF193E3F9100C8F947 /* 98.png */; };
@@ -109,8 +108,7 @@
 		229BF75D192DCCDA00045540 /* taxioil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = taxioil.jpg; sourceTree = "<group>"; };
 		22CE7C45193335CE00CE6827 /* detailButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detailButton.png; sourceTree = "<group>"; };
 		22D68415192F52AD007B03FF /* default.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = default.gpx; sourceTree = "<group>"; };
-		849F3070193CEAE9002C8CAC /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
-		84A0000D194045E900E2B5B2 /* 76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 76.png; path = "../../../../../Volumes/VMware Shared Folders/VM_Share/76.png"; sourceTree = "<group>"; };
+		84A021DE194088DD00A8DA6E /* 76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76.png; sourceTree = "<group>"; };
 		84A46FD7193F58BE009AE451 /* fon2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fon2.jpg; path = "../../../../../Volumes/VMware Shared Folders/VM_Share/fon/fon2.jpg"; sourceTree = "<group>"; };
 		84AB7DED193E3D6B00C8F947 /* основной_фон.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "основной_фон.jpg"; sourceTree = "<group>"; };
 		84AB7DEF193E3F9100C8F947 /* 98.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 98.png; sourceTree = "<group>"; };
@@ -225,15 +223,14 @@
 		22701D01191BC5B80095D8DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				84A0000D194045E900E2B5B2 /* 76.png */,
 				84AB7DF3193E427900C8F947 /* 92.png */,
+				84A021DE194088DD00A8DA6E /* 76.png */,
 				84A46FD7193F58BE009AE451 /* fon2.jpg */,
 				84AB7DF4193E427900C8F947 /* 95.png */,
 				84AB7DF5193E427900C8F947 /* 98.png */,
 				84AB7DF6193E427900C8F947 /* ВЫЙТИ.png */,
 				84AB7DF7193E427900C8F947 /* ДТ.png */,
 				84AB7DF8193E427900C8F947 /* КАРТА.png */,
-				849F3070193CEAE9002C8CAC /* button1.png */,
 				84AB7DED193E3D6B00C8F947 /* основной_фон.jpg */,
 				84AB7DEF193E3F9100C8F947 /* 98.png */,
 				84B49AD0193B89D100CE8A19 /* font1.png */,
@@ -354,7 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A0000E194045E900E2B5B2 /* 76.png in Resources */,
+				84A021DF194088DD00A8DA6E /* 76.png in Resources */,
 				84AB7E00193E427900C8F947 /* КАРТА.png in Resources */,
 				22701D05191BC5B80095D8DD /* InfoPlist.strings in Resources */,
 				84AB7DFB193E427900C8F947 /* 92.png in Resources */,
@@ -373,7 +370,6 @@
 				229BF75E192DCCDA00045540 /* gazprom-neft.jpg in Resources */,
 				229BF75F192DCCDA00045540 /* lykoil.jpg in Resources */,
 				229BF760192DCCDA00045540 /* taxioil.jpg in Resources */,
-				849F3071193CEAE9002C8CAC /* button1.png in Resources */,
 				84AB7DFC193E427900C8F947 /* 95.png in Resources */,
 				B3B08B81192E6AAC00AEA5A0 /* zapravkalogo.png in Resources */,
 				22D68416192F52AD007B03FF /* default.gpx in Resources */,
