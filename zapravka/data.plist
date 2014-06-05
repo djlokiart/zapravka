@@ -37,14 +37,14 @@
 			<key>Comp_id</key>
 			<integer>0</integer>
 			<key>Price</key>
-			<string>33.35,25.50,30.50,34.40,32.90</string>
+			<string>33.85,25.50,30.70,34.40,33.00</string>
 			<key>newPrice</key>
 			<array>
-				<string>33.35</string>
-				<string>25.50</string>
-				<string>30.50</string>
 				<string>34.40</string>
-				<string>32.90</string>
+				<string>33.55</string>
+				<string>30,70</string>
+				<string>25.50</string>
+				<string>33.00</string>
 			</array>
 			<key>Fuel_name_and_Price_list</key>
 			<array>
@@ -221,11 +221,11 @@
 		<dict>
 			<key>newPrice</key>
 			<array>
-				<string>33.35</string>
-				<string>25.50</string>
-				<string>30.50</string>
-				<string>34.40</string>
-				<string>32.90</string>
+				<string>35.00</string>
+				<string>33.85</string>
+				<string>30.70</string>
+				<string>25.40</string>
+				<string>33.40</string>
 			</array>
 			<key>Fuel_name_and_Price_list</key>
 			<array>
@@ -257,7 +257,7 @@
 			<key>Comp_id</key>
 			<integer>2</integer>
 			<key>Price</key>
-			<string>33.85,30.70,34.35,33.40</string>
+			<string>35.00,33.85,30.70,33.40</string>
 			<key>Rating</key>
 			<real>4.7</real>
 			<key>Fueltype</key>

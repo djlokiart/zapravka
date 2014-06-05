@@ -158,12 +158,12 @@
                                     <segue destination="2" kind="push" id="MLy-qk-dgx"/>
                                 </connections>
                             </button>
-                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaT-SA-kEy">
-                                <rect key="frame" x="99" y="65" width="41" height="49"/>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaT-SA-kEy">
+                                <rect key="frame" x="67" y="70" width="45" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="1hC-ZX-DYZ"/>
-                                    <constraint firstAttribute="width" constant="41" id="MYQ-Cn-rFH"/>
+                                    <constraint firstAttribute="width" constant="45" id="sow-2X-rjo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="АИ-98" image="98.png"/>
@@ -171,12 +171,12 @@
                                     <action selector="Push98:" destination="f63-e3-jTO" eventType="touchDown" id="HXA-0N-j49"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47b-J4-gZS">
-                                <rect key="frame" x="9" y="135" width="40" height="44"/>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47b-J4-gZS">
+                                <rect key="frame" x="9" y="116" width="45" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="8Ql-Rs-C1e"/>
-                                    <constraint firstAttribute="height" constant="44" id="x1q-QX-Uep"/>
+                                    <constraint firstAttribute="height" constant="48" id="93r-Hu-2vv"/>
+                                    <constraint firstAttribute="width" constant="45" id="jdN-Jg-1Jj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="АИ-95" image="95.png">
@@ -186,12 +186,11 @@
                                     <action selector="Push95:" destination="f63-e3-jTO" eventType="touchDown" id="uxZ-Xy-eWx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjj-Yv-VHc">
-                                <rect key="frame" x="94" y="179" width="45" height="54"/>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjj-Yv-VHc">
+                                <rect key="frame" x="67" y="167" width="45" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="9Os-LT-3E9"/>
-                                    <constraint firstAttribute="width" constant="45" id="fEq-gB-m3E"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="АИ-92" image="92.png">
@@ -201,21 +200,21 @@
                                     <action selector="Push92:" destination="f63-e3-jTO" eventType="touchDown" id="zxb-wm-oVW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gR-PJ-kYh">
-                                <rect key="frame" x="9" y="249" width="44" height="50"/>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gR-PJ-kYh">
+                                <rect key="frame" x="5" y="226" width="49" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ezt-Za-zE0"/>
-                                    <constraint firstAttribute="width" constant="44" id="xMf-HH-Dfr"/>
+                                    <constraint firstAttribute="height" constant="51" id="GGA-4K-H1V"/>
+                                    <constraint firstAttribute="width" constant="49" id="YpK-la-Zgi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="АИ-80" image="92.png"/>
+                                <state key="normal" title="АИ-80" image="76.png"/>
                                 <connections>
                                     <action selector="Push80:" destination="f63-e3-jTO" eventType="touchDown" id="w9B-dY-GVq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xw-gw-yg3">
-                                <rect key="frame" x="86" y="277" width="47" height="60"/>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xw-gw-yg3">
+                                <rect key="frame" x="67" y="262" width="47" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="47" id="XDA-DY-hZ5"/>
@@ -252,22 +251,23 @@
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="47b-J4-gZS" firstAttribute="top" secondItem="gyG-0l-tjv" secondAttribute="top" constant="135" id="4Lf-hX-bqB"/>
-                            <constraint firstItem="9gR-PJ-kYh" firstAttribute="leading" secondItem="vyo-O4-gVp" secondAttribute="leading" type="default" id="7En-Wl-FlS"/>
-                            <constraint firstItem="Mjj-Yv-VHc" firstAttribute="top" secondItem="gyG-0l-tjv" secondAttribute="top" constant="179" id="BiT-W0-gnX"/>
-                            <constraint firstItem="Mjj-Yv-VHc" firstAttribute="leading" secondItem="gyG-0l-tjv" secondAttribute="leading" constant="94" id="MPd-Lc-sdl"/>
+                            <constraint firstItem="9gR-PJ-kYh" firstAttribute="top" secondItem="gyG-0l-tjv" secondAttribute="top" constant="226" id="1Pk-Mj-Qlk"/>
+                            <constraint firstItem="VaT-SA-kEy" firstAttribute="trailing" secondItem="Mjj-Yv-VHc" secondAttribute="trailing" type="default" id="5TR-p7-nod"/>
+                            <constraint firstItem="8Xw-gw-yg3" firstAttribute="trailing" secondItem="TGe-I2-0Lu" secondAttribute="trailing" type="default" id="7rW-YC-8vc"/>
+                            <constraint firstItem="47b-J4-gZS" firstAttribute="leading" secondItem="vyo-O4-gVp" secondAttribute="leading" type="default" id="Df4-iG-z31"/>
+                            <constraint firstItem="Mjj-Yv-VHc" firstAttribute="leading" secondItem="8Xw-gw-yg3" secondAttribute="leading" type="default" id="Hxu-R1-lKm"/>
                             <constraint firstAttribute="bottom" secondItem="TGe-I2-0Lu" secondAttribute="bottom" constant="75" id="Meh-TW-HV3"/>
-                            <constraint firstItem="TGe-I2-0Lu" firstAttribute="leading" secondItem="gyG-0l-tjv" secondAttribute="leading" constant="34" id="OOJ-gb-uDA"/>
-                            <constraint firstItem="8Xw-gw-yg3" firstAttribute="leading" secondItem="gyG-0l-tjv" secondAttribute="leading" constant="86" id="TgF-fJ-cUC"/>
+                            <constraint firstItem="47b-J4-gZS" firstAttribute="top" secondItem="gyG-0l-tjv" secondAttribute="top" constant="116" id="TCS-Ea-KNp"/>
+                            <constraint firstItem="TGe-I2-0Lu" firstAttribute="leading" secondItem="gyG-0l-tjv" secondAttribute="leading" constant="34" id="U9m-xu-quc"/>
                             <constraint firstAttribute="bottom" secondItem="pni-XK-Umj" secondAttribute="bottom" type="default" id="Ugs-JE-K73"/>
                             <constraint firstAttribute="bottom" secondItem="vyo-O4-gVp" secondAttribute="bottom" constant="117" id="XMB-0v-Wy8"/>
-                            <constraint firstAttribute="bottom" secondItem="8Xw-gw-yg3" secondAttribute="bottom" constant="167" id="bRk-Zn-nB2"/>
-                            <constraint firstItem="9gR-PJ-kYh" firstAttribute="top" secondItem="gyG-0l-tjv" secondAttribute="top" constant="249" id="baW-Zm-jfq"/>
-                            <constraint firstItem="9gR-PJ-kYh" firstAttribute="leading" secondItem="47b-J4-gZS" secondAttribute="leading" type="default" id="e8S-0b-98P"/>
-                            <constraint firstItem="VaT-SA-kEy" firstAttribute="leading" secondItem="gyG-0l-tjv" secondAttribute="leading" constant="99" id="p3o-4P-hRh"/>
-                            <constraint firstItem="VaT-SA-kEy" firstAttribute="top" secondItem="gyG-0l-tjv" secondAttribute="top" constant="65" id="pUl-sb-La0"/>
-                            <constraint firstItem="47b-J4-gZS" firstAttribute="leading" secondItem="gyG-0l-tjv" secondAttribute="leading" constant="9" id="phn-QP-mfp"/>
+                            <constraint firstItem="VaT-SA-kEy" firstAttribute="leading" secondItem="Mjj-Yv-VHc" secondAttribute="leading" type="default" id="gwQ-gS-dQZ"/>
+                            <constraint firstAttribute="bottom" secondItem="8Xw-gw-yg3" secondAttribute="bottom" constant="182" id="kSh-r5-RwX"/>
+                            <constraint firstItem="VaT-SA-kEy" firstAttribute="top" secondItem="gyG-0l-tjv" secondAttribute="top" constant="70" id="p1m-wT-pWJ"/>
+                            <constraint firstItem="Mjj-Yv-VHc" firstAttribute="top" secondItem="gyG-0l-tjv" secondAttribute="top" constant="167" id="pOG-DU-zjn"/>
                             <constraint firstItem="pni-XK-Umj" firstAttribute="leading" secondItem="gyG-0l-tjv" secondAttribute="leading" type="default" id="qNc-dV-J0H"/>
+                            <constraint firstItem="9gR-PJ-kYh" firstAttribute="trailing" secondItem="47b-J4-gZS" secondAttribute="trailing" type="default" id="yJ9-tP-v4N"/>
+                            <constraint firstItem="9gR-PJ-kYh" firstAttribute="leading" secondItem="gyG-0l-tjv" secondAttribute="leading" constant="5" id="zRR-EP-qoH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9XB-JC-68a"/>
@@ -562,6 +562,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="76.png" width="88" height="89"/>
         <image name="92.png" width="85" height="91"/>
         <image name="95.png" width="76" height="100"/>
         <image name="98.png" width="76" height="84"/>
